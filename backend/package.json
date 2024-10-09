@@ -1,0 +1,15 @@
+{
+  "name": "rave-lite-backend",
+  "version": "1.0.0",
+  "description": "Backend for Rave Lite",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.5.1"
+  }
+}

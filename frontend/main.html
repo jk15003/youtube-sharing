@@ -1,0 +1,41 @@
+<!-- frontend/main.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rave Lite - Room</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="mainPage" class="page">
+    <header>
+      <div id="datetime">Loading...</div>
+      <div id="welcome">Welcome, <span id="usernameDisplay"></span>!</div>
+    </header>
+
+    <main>
+      <section id="inviteSection">
+        <p>Invite someone to your room:</p>
+        <input type="text" id="roomLink" readonly>
+        <button id="copyLinkBtn">Copy Invite Link</button>
+      </section>
+
+      <section id="youtubeSection">
+        <input type="text" id="youtubeLink" placeholder="Paste YouTube video link">
+        <button id="loadVideoBtn">Load Video</button>
+        <div id="videoPlayerContainer">
+          <div id="player"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Rave Lite © 2024</p>
+    </footer>
+  </div>
+
+  <!-- Socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
